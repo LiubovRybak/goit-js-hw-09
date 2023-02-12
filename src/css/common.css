@@ -16,3 +16,13 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  flex-direction: row;
+}
+
+.value {
+  margin-left: 8px;
+  color: rgb(16, 143, 143);
+}
