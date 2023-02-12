@@ -27,7 +27,7 @@ let delay = Number(delayF.value);
 const step = Number(delayStep.value);
 const amount = Number(amountInput.value);
 
-for (i=1; i <= amount; i += 1) {
+for (let i = 1; i <= amount; i += 1) {
   createPromise (i, delay).then(({position, delay}) => {
     Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
   }).catch (({position, delay}) => {
